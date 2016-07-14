@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mongoose Dshboard !</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+    <script type ="text/javascript">
+        
+
+    </script>    
+</head>
+<body> 
+	<div>
+		<h2>Here is the mongooses:</h2>
+		<% for (var x in mongooses) { %>
+	        <h4>Name: <%= mongooses[x].name %>  | age: <%= mongooses[x].age %> <br>
+	        </h4>
+	        <hr>
+	    <% } %>
+	</div>
+	
+</body>
+</html>

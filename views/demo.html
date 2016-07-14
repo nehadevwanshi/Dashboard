@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mongoose</title>
+</head>
+<body>
+	<form action="/mongoose/<%= mongoose._id %>" method="post">
+		<div>
+			<label for="">Mongoose Name: </label>
+			<input type="text" name="name" id="" value="<%= mongoose.name %>">
+		</div>
+		<div>
+			<label for="">Mongoose Weight: </label>
+			<input type="text" name="weight" id="" value="<%= mongoose.weight %>">
+		</div>
+		<div>
+			<label for="">Mongoose Color: </label>
+			<input type="text" name="color" id="" value="<%= mongoose.color %>">
+		</div>
+		<input type="submit" value="Edit Mongoose">
+	</form>
+</body>
+</html>

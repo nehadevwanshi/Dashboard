@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mongoose Dshboard !</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
+    <script type ="text/javascript">
+        
+
+    </script>    
+</head>
+<body> 
+	
+	<div>
+		<form action="/mongooses/<%= mongooses._id %>/" method="POST">
+		<div>
+			<label for="">Mongoose Name: </label>
+			<input type="text" name="name" id="" value="<%= mongooses.name %>">
+		</div>
+		<div>
+			<label for="">Mongoose Age: </label>
+			<input type="text" name="age" id="" value="<%= mongooses.age %>">
+		</div>
+		
+		<input type="submit" value="Update Mongoose">
+	</form>
+	</div>
+</body>
+</html>
